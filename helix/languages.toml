@@ -1,0 +1,12 @@
+[[language]]
+name = "yaml"
+auto-format = false
+formatter = { command = "yamlfmt", args = ["-"] }
+
+[[language]]
+name = "fish"
+language-servers = ["fish-lsp"]
+
+# [language-server.fish-lsp]
+# command = "fish-lsp"
+# args = ["start"]

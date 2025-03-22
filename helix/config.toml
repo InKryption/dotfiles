@@ -1,0 +1,239 @@
+theme = "dark_plus_custom"
+
+[editor]
+mouse = false
+bufferline = "always"
+color-modes = true
+cursorline = true
+cursorcolumn = true
+line-number = "relative"
+auto-format = false
+auto-info = true
+# auto-completion = false
+idle-timeout = 0
+insert-final-newline = false
+true-color = true
+
+[editor.cursor-shape]
+normal = "block"
+select = "block"
+insert = "bar"
+
+[editor.whitespace.render]
+newline = "all"
+
+[editor.whitespace.characters]
+newline = '˙'
+
+[editor.indent-guides]
+render = true
+
+[editor.lsp]
+snippets = false
+auto-signature-help = false
+display-inlay-hints = false
+display-messages = true
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control"]
+center = ["file-name", "file-encoding"]
+right = [
+  "workspace-diagnostics",
+  "diagnostics",
+  "primary-selection-length",
+  "selections",
+  "position",
+]
+
+[keys.insert]
+# hack to make entering normal mode not delete auto-inserted whitespace
+"esc" = ["move_char_left", "normal_mode", "move_char_right"]
+
+[keys.normal]
+n = "move_char_left"
+e = "move_visual_line_up"
+i = "move_visual_line_down"
+o = "move_char_right"
+
+# h = "no_op"
+j = "no_op"
+# k = "no_op"
+l = "no_op"
+
+x = "extend_line_below"
+X = "extend_line_above"
+
+f = "move_next_word_end"
+F = "move_next_long_word_end"
+
+N = "no_op"
+h = "search_next"
+H = "search_prev"
+
+y = "yank"
+Y = "yank_joined"
+
+"ret" = "insert_mode"
+
+c = "change_selection_noyank"
+"A-c" = "no_op"
+
+"ñ" = "open_below"
+"Ñ" = "open_above"
+
+# don't yank deleted stuff - if I want to do that I'll just yd
+d = "delete_selection_noyank"
+D = "delete_char_backward"
+"A-d" = "no_op"
+
+# switch between lower and upper case with accent keys
+"`" = ["switch_to_uppercase"]
+"´" = ["switch_to_lowercase"]
+
+g = "no_op"
+
+[keys.select]
+n = "extend_char_left"
+e = "extend_visual_line_up"
+i = "extend_visual_line_down"
+o = "extend_char_right"
+
+# h = "no_op"
+j = "no_op"
+k = "no_op"
+l = "no_op"
+
+x = "extend_line_below"
+X = "extend_line_above"
+
+f = "extend_next_word_end"
+F = "extend_next_long_word_end"
+
+N = "no_op"
+h = "extend_search_next"
+H = "extend_search_prev"
+
+y = "yank"
+Y = "yank_joined"
+
+"ret" = "insert_mode"
+
+c = "change_selection_noyank"
+"A-c" = "no_op"
+
+"ñ" = "open_below"
+"Ñ" = "open_above"
+
+# don't yank deleted stuff - if I want to do that I'll just yd
+d = "delete_selection_noyank"
+D = "delete_char_backward"
+"A-d" = "no_op"
+
+# switch between lower and upper case with accent keys
+"`" = ["switch_to_uppercase"]
+"´" = ["switch_to_lowercase"]
+
+g = "no_op"
+
+# [go]to mode
+[keys.normal.t]
+t = "goto_file_start"
+T = "goto_file_end"
+
+n = "goto_line_start"
+e = "goto_window_top"
+i = "goto_window_bottom"
+o = "goto_line_end"
+O = "goto_line_end_newline"
+
+c = "find_next_char"
+C = "find_prev_char"
+
+h = "no_op"
+j = "no_op"
+k = "no_op"
+# l = "no_op"
+
+s = "goto_first_nonwhitespace"
+d = "goto_definition"
+D = "goto_declaration"
+y = "goto_type_definition"
+r = "goto_reference"
+m = "goto_implementation"
+f = "goto_file"
+"." = "goto_last_modification"
+w = "goto_word"
+
+l = "goto_previous_buffer"
+"ñ" = "goto_next_buffer"
+
+[keys.select.t]
+t = "goto_file_start"
+T = "goto_file_end"
+
+n = "goto_line_start"
+e = "goto_window_top"
+i = "goto_window_bottom"
+o = "goto_line_end"
+O = "goto_line_end_newline"
+
+c = "extend_next_char"
+C = "extend_prev_char"
+
+h = "no_op"
+j = "no_op"
+k = "no_op"
+# l = "no_op"
+
+s = "goto_first_nonwhitespace"
+d = "goto_definition"
+D = "goto_declaration"
+y = "goto_type_definition"
+r = "goto_reference"
+m = "goto_implementation"
+f = "goto_file"
+"." = "goto_last_modification"
+w = "goto_word"
+
+l = "goto_previous_buffer"
+"ñ" = "goto_next_buffer"
+
+[keys.normal.z]
+h = "no_op"
+j = "no_op"
+k = "no_op"
+# l = "no_op"
+
+e = "scroll_up"
+i = "scroll_down"
+
+[keys.normal.Z]
+h = "no_op"
+j = "no_op"
+k = "no_op"
+# l = "no_op"
+
+e = "scroll_up"
+i = "scroll_down"
+
+[keys.select.z]
+h = "no_op"
+j = "no_op"
+k = "no_op"
+# l = "no_op"
+
+e = "scroll_up"
+i = "scroll_down"
+
+[keys.select.Z]
+h = "no_op"
+j = "no_op"
+k = "no_op"
+# l = "no_op"
+
+e = "scroll_up"
+i = "scroll_down"
+
+[keys.normal.space]
+e = "hover"
+k = "no_op"

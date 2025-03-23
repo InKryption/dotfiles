@@ -1,6 +1,7 @@
 if status is-interactive
+    alias dir 'dir --color=auto'
     alias ls 'ls -A --color=auto'
-    abbr l 'ls -lah'
+    alias l 'command ls -lAh --color=auto'
 
     abbr cls clear
     abbr 'cd..' 'cd ..'

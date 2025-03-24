@@ -1,5 +1,5 @@
 if status is-interactive
-    alias dir 'dir --color=auto'
+    alias dir 'ls --color=auto'
     alias ls 'ls -A --color=auto'
     alias l 'command ls -lAh --color=auto'
 

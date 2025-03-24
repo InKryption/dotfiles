@@ -1,6 +1,5 @@
 if status is-interactive
-    alias dir 'ls --color=auto'
-    alias ls 'ls -A --color=auto'
+    alias ls 'command ls -lh --color=auto'
     alias l 'command ls -lAh --color=auto'
 
     abbr cls clear

@@ -1,13 +1,3 @@
-if not command -q helix
-    and not command -q hx
-    return
-end
-
-if not command -q hx
+if not command -q hx; and command -q helix
     abbr hx helix
 end
-
-if not command -q helix
-    abbr helix hx
-end
-

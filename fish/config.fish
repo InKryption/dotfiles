@@ -1,5 +1,5 @@
 if status is-interactive
-    alias ls 'command ls -lh --color=auto'
+    alias ls 'ls -lh --color=auto'
     alias l 'command ls -lAh --color=auto'
 
     abbr cls clear

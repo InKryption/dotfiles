@@ -65,6 +65,7 @@ bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id dmenu_run -i -l 10
+bindsym $mod+g exec --no-startup-id j4-dmenu-desktop -d "dmenu -i -l 10"
 # start clipmenu
 bindsym $mod+Ctrl+v exec --no-startup-id clipmenu -i -l 10
 

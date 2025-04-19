@@ -1,5 +1,6 @@
 include dmenu
 include volume-control
+include floating-windows
 include ~/.i3rc
 
 set $mod Mod4

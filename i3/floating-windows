@@ -1,2 +1,3 @@
 # steam
-for_window [class="steam" instance="steamwebhelper" title="Friends List"] floating enable
+for_window [class="steam" instance="steamwebhelper"] floating enable
+for_window [class="steam" instance="steamwebhelper" title="Steam"] floating disable

@@ -57,7 +57,7 @@ o = "move_char_right"
 
 # h = "no_op"
 j = "no_op"
-# k = "no_op"
+k = "no_op"
 l = "no_op"
 
 x = "extend_line_below"
@@ -168,8 +168,8 @@ l = "goto_previous_buffer"
 "ñ" = "goto_next_buffer"
 
 [keys.select.t]
-t = "goto_file_start"
-T = "goto_file_end"
+t = "extend_to_file_start"
+T = "extend_to_file_end"
 
 n = "goto_line_start"
 e = "goto_window_top"

@@ -4,8 +4,8 @@ if status is-interactive
 
     abbr cls clear
     abbr 'cd..' 'cd ..'
+end
 
-    if test -f ~/.fishrc
-        source ~/.fishrc
-    end
+if test -f ~/.fishrc
+    source ~/.fishrc
 end

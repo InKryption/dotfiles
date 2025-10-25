@@ -20,3 +20,7 @@ concat(
   diff.git(),
 )
 '''
+
+[signing]
+behavior = "own"
+backend = "gpg"

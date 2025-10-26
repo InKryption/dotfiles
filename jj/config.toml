@@ -2,7 +2,7 @@
 
 [ui]
 editor = "helix"
-default-command = "st"
+default-command = "log"
 
 [user]
 name = "InKryption"

@@ -22,5 +22,8 @@ concat(
 '''
 
 [signing]
-behavior = "own"
+behavior = "keep"
 backend = "gpg"
+
+[git]
+sign-on-push = true

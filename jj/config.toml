@@ -22,7 +22,7 @@ concat(
 '''
 
 [signing]
-behavior = "keep"
+behavior = "drop"
 backend = "gpg"
 
 [git]

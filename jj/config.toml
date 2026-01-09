@@ -28,6 +28,11 @@ backend = "gpg"
 [git]
 sign-on-push = true
 
+[aliases]
+shortlist = ["util", "exec", "--", "sh", "-c", """
+jj log -r "$1::$2" --template '" " ++ self.change_id().shortest()' --no-graph --reversed
+""", ""]
+
 [[--scope]]
 --when.commands = ["diff", "show"]
 [--scope.ui]

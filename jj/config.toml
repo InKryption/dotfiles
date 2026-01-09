@@ -27,3 +27,9 @@ backend = "gpg"
 
 [git]
 sign-on-push = true
+
+[[--scope]]
+--when.commands = ["diff", "show"]
+[--scope.ui]
+pager = { command = ["delta", "-s"], env = {} }
+diff-formatter = ":git"

@@ -237,3 +237,15 @@ i = "scroll_down"
 [keys.normal.space]
 e = "hover"
 k = "no_op"
+
+[keys.normal.space.w]
+n = "jump_view_left"
+e = "jump_view_up"
+i = "jump_view_down"
+o = "jump_view_right"
+
+[keys.normal.C-w]
+n = "jump_view_left"
+e = "jump_view_up"
+i = "jump_view_down"
+o = "jump_view_right"

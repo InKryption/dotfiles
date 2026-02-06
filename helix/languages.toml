@@ -1,0 +1,12 @@
+[language-server.hledger-lsp]
+command = "hledger-lsp"
+
+[[language]]
+name = "hledger"
+scope = "source.hledger"
+injection-regex = "hledger"
+file-types = ["hledger", "journal", "j"]
+comment-tokens = [";", "#"]
+block-comment-tokens = [{ start = "comment\n", end = "\nend comment" }]
+indent = { tab-width = 2, unit = " " }
+language-servers = ["hledger-lsp"]
